@@ -4,14 +4,18 @@ import com.fitness.userservice.dto.RegisterRequest;
 import com.fitness.userservice.dto.UserResponse;
 import com.fitness.userservice.model.User;
 import com.fitness.userservice.repository.UserRepository;
+import com.netflix.discovery.converters.Auto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.logging.*;
 
 @Service
 public class UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+    private static Logger logger = Logger.getLogger(UserService.class.getName());
 
     public UserResponse register(RegisterRequest request) {
 
@@ -54,6 +58,7 @@ public class UserService {
     }
 
     public Boolean existByUserId(String userId) {
+        logger.info("Calling User Validation API for userId: "+userId);
         return userRepository.existsById(userId);
     }
 }
