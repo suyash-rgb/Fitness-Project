@@ -5,3 +5,5 @@ USE fitness_user_db;
 SHOW TABLES;
 
 DESCRIBE users;
+
+SELECT * FROM users;
