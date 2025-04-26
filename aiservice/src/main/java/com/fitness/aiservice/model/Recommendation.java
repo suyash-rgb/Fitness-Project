@@ -160,4 +160,21 @@ public class Recommendation {
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
+
+    public Recommendation() {
+    }
+
+    public Recommendation(String id, String activityId, String userId, String actiityType, String recommendation, List<String> improvements, List<String> suggestions, List<String> safety, LocalDateTime createdAt) {
+        this.id = id;
+        this.activityId = activityId;
+        this.userId = userId;
+        this.actiityType = actiityType;
+        this.recommendation = recommendation;
+        this.improvements = improvements;
+        this.suggestions = suggestions;
+        this.safety = safety;
+        this.createdAt = createdAt;
+    }
+
+
 }
