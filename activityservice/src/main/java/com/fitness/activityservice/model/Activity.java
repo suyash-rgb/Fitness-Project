@@ -20,7 +20,7 @@ public class Activity {
     private LocalDateTime startTime;
 
     @Field("metrics")
-    private Map<String, Object> additionalMetrics;
+    private Map<String, Object> additionalMetrics;  //open ended field
 
     @CreatedDate
     private LocalDateTime createdAt;
