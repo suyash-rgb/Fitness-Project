@@ -5,7 +5,6 @@ import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import java.lang.reflect.MalformedParameterizedTypeException;
 import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.Objects;
